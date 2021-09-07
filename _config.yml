@@ -75,13 +75,12 @@ content:
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         # quote: >
         #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description:  # this will include new lines to allow paragraphs
-      | 
-      Since privatization deployment only supports c++, i reconstruct the original pipeline  by  using c++，include implying the cnn siamese network for both training and inference procedure， replacing the elasticsearch with faiss。 
-      |
-      Since the real chat records are disordered (such as QQAQAA)， i train CNN siamese network for Question Answering  and use it to reorder the chat records. 
-      |
-      I develop a pipeline to mine the dialogue template by represent chat records as graph and use graph-partition algorithm like louvain or infomap to find sub-template。
+        description: |  # this will include new lines to allow paragraphs
+              Since privatization deployment only supports c++, i reconstruct the original pipeline  by  using c++，include implying the cnn siamese network for both training and inference procedure， replacing the elasticsearch with faiss。 
+      
+              Since the real chat records are disordered (such as QQAQAA)， i train CNN siamese network for Question Answering  and use it to reorder the chat records. 
+      
+              I develop a pipeline to mine the dialogue template by represent chat records as graph and use graph-partition algorithm like louvain or infomap to find sub-template。
     # I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
   - title: Experience # Title for the section
