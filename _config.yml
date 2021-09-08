@@ -62,26 +62,46 @@ content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: top-middle
+      - layout: left
         title: Smart Custom Service
         # link: github.com/sproogen
         # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     # icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         # quote: >
         #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: |  # this will include new lines to allow paragraphs
-              Since privatization deployment only supports c++, i reconstruct the original pipeline  by  using c++，include implying the cnn siamese network for both training and inference procedure， replacing the elasticsearch with faiss。 
+              - Since privatization deployment only supports c++, i reconstruct the original pipeline  by  using c++, include implying the cnn siamese network for both training and inference procedure, replacing the elasticsearch with faiss.
       
-              Since the real chat records are disordered (such as QQAQAA)， i train CNN siamese network for Question Answering  and use it to reorder the chat records. 
+              - Since the real chat records are disordered (such as QQAQAA), i train CNN siamese network for Question Answering  and use it to reorder the chat records. 
       
-              I develop a pipeline to mine the dialogue template by represent chat records as graph and use graph-partition algorithm like louvain or infomap to find sub-template。
+              - I develop a pipeline to mine the dialogue template by represent chat records as graph and use graph-partition algorithm like louvain or infomap to find sub-template.
     # I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+
+      - layout: left
+        title: Abstract Summarization System Deployment Speed Up
+        description: |  # this will include new lines to allow paragraphs
+              
+              - By analizing the computation details of T5, I reconstruct a more efficent T5 model. 
+              - I also split the model to encoder, decoder_1 (for first step), decoder_2 (for proceed steps) and use onnxruntime framework to speed up the inference. 
+              - By evaluating in the valid dataset, i found that using greedy search does't harm the performance of system and can bring lots of time gains.
+              - What's more, I devolep a computation graph optimization tool based on onnxgraph-surgeon provided by TensorRT to reduce the repeated shape inference for the variable in the onnx graph.
+              - Using gpu-ngram blocking operator to replace the original ngram blocking which is in the cpu. 
+
+      - layout: left
+        title: Chinese WhiteList Ner
+        quote: >
+          I research how to argument the ner performace by using the known entity list。
+        description: |  # this will include new lines to allow paragraphs
+              - I implement an NER Baselines by using pytorch, include (LSTM+CRF, BERT+CRF, BERT+Softmax, MRC-NER, Span-NER)
+              - I use span-based ner model and combine the span representation with entity embedding to improve the ner model performance.
+              - In resume and Weibo dataset， i got a competitive results. (For Weibo dataset, F1 0.72; For Resume dataset, F1 0.97)
+              
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
@@ -101,15 +121,21 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-        description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+        title: Tianjin University
+        caption: 2016.09 - 2019.01
+        sub_title: Computer Technology
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+      - layout: left
+        title: Xiangtan University
+        caption: 2012.09 - 2016.06
+        sub_title: Software Engineering
+      
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        # description: | # this will include new lines to allow paragraphs
+        #   During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+
+        #   I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
 
   - title: A Little More About Me
     layout: text
