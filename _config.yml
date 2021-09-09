@@ -50,7 +50,7 @@ about_profile_image: images/1181631115763_.pic.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Jingda Xu and I'm a NLP Researcher in Sogou Inc. (A Famous Internet company in China). 
 
-  I have got my master's at Tianjin University (2019), China.
+  I have got my master's degree at Tianjin University (2019), China.
 
   I am skilled at Text Generation, Dialogue Systems and (Pretrain) Language Model and have great interest in Multimodal Understanding and Variation Models.
 
@@ -62,7 +62,7 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Smart Custom Service
+        title: Customer Service Chatbot
         # link: github.com/sproogen
         # link_text: Project Website
         # additional_links:
@@ -75,20 +75,20 @@ content:
         # quote: >
         #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: |  # this will include new lines to allow paragraphs
-              - Since privatization deployment only supports c++, i reconstruct the original pipeline  by  using c++, include implying the cnn siamese network for both training and inference procedure, replacing the elasticsearch with faiss.
+              - Since privatization deployment only supports c++, I reconstruct the original pipeline by using c++, including implying the CNN Siamese Network for both training and inference procedure, replacing the elasticsearch with faiss.
       
-              - Since the real chat records are disordered (such as QQAQAA), i train CNN siamese network for Question Answering  and use it to reorder the chat records. 
+              - Since the real chat records are disordered (such as QQAQAA), I trained CNN Siamese Network for Question Answering and use it to reorder the chat records. 
       
-              - I develop a pipeline to mine the dialogue template by represent chat records as graph and use graph-partition algorithm like louvain or infomap to find sub-template.
+              - Developed a pipeline to mine the dialogue template by representing chat records as graph and use graph-partition algorithm like Louvain or Infomap to find sub-template.
     # I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
       - layout: left
-        title: Abstract Summarization System Deployment Speed Up
+        title: Speed Up Abstract Summarization Inference
         description: |  # this will include new lines to allow paragraphs
               
-              - By analizing the computation details of T5, I reconstruct a more efficent T5 model. 
-              - I also split the model to encoder, decoder_1 (for first step), decoder_2 (for proceed steps) and use onnxruntime framework to speed up the inference. 
-              - By evaluating in the valid dataset, i found that using greedy search does't harm the performance of system and can bring lots of time gains.
+              - By analysing the computation details of T5, I reconstructed a more efficient T5 model. 
+              - I also split the model to encoder, decoder_1 (for first step), decoder_2 (for subsequent steps) and use onnxruntime framework to speed up the inference. 
+              - Through evaluation, I found that using greedy search doesn't affect the performance of system and can bring lots of time gains.
               - What's more, I devolep a computation graph optimization tool based on onnxgraph-surgeon provided by TensorRT to reduce the repeated shape inference for the variable in the onnx graph.
               - Using gpu-ngram blocking operator to replace the original ngram blocking which is in the cpu. 
 
