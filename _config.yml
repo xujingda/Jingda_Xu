@@ -153,11 +153,13 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        quote: >
+        caption:
+        # quote: >
          Tianjin University  2016.09 - 2019.01  Computer Technology
 
       - layout: left
-        quote: >
+        # quote: >
+        caption:
          Xiangtan University 2012.09 - 2016.06  Software Engineering
       
         # quote: >
