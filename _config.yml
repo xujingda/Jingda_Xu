@@ -155,12 +155,12 @@ content:
       - layout: left
         caption:
         # quote: >
-         Tianjin University  2016.09 - 2019.01  Computer Technology
+         Tianjin University  2016.09 - 2019.01  Computer Technology -- Master's Degree
 
       - layout: left
         # quote: >
         caption:
-         Xiangtan University 2012.09 - 2016.06  Software Engineering
+          Xiangtan University 2012.09 - 2016.06  Software Engineering  -- Bachelor's Degree
       
         # quote: >
         #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
