@@ -153,13 +153,12 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        caption:
-        # quote: >
-         Tianjin University  2016.09 - 2019.01  Computer Technology -- Master's Degree
+        description: |
+          Tianjin University  2016.09 - 2019.01  Computer Technology -- Master's Degree
 
       - layout: left
         # quote: >
-        caption:
+        description: |
           Xiangtan University 2012.09 - 2016.06  Software Engineering  -- Bachelor's Degree
       
         # quote: >
