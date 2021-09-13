@@ -100,8 +100,41 @@ content:
               - I implemented an NER Baselines by using pytorch, include (LSTM+CRF, BERT+CRF, BERT+Softmax, MRC-NER, Span-NER).
               - I combine the span representation with entity embedding to improve the ner model performance.
               - I got competitive results in resume and Weibo dataset (For Weibo dataset, F1 0.72; For Resume dataset, F1 0.97).
-              
+      
+      - layout: left
+        title: Summarization Ability of Sogou Recording Pen
+        # quote: >
+        #   I research how to argument the ner performace by using the known entity list。
+        description: |  # this will include new lines to allow paragraphs
+              - I implemented extractive summarization models based on chinese word level XLNet (pre-trained by myself).
+              - Since the extractive summarization can be seen as an unbalanced classification task, I use dice loss to alleviate the label unbalance and imporve the Rouge F1 over 1%.
 
+      - layout: left
+        title: NLP Common Packages
+        # quote: >
+        #   I research how to argument the ner performace by using the known entity list。
+        description: |  # this will include new lines to allow paragraphs
+              - I implemented and trained word level Chinese pre-training models (eg. BART, Albert, Bert, XLNet). Since the size of vocabulary is too big, I use adaptive embedding and adaptive softmax to reduce the model size.
+              - Based on these pre-training models, I also provide API for some common tasks like data argument, punctation prediction. 
+
+      - layout: left
+        title: Table Reservation ChatBot
+        # quote: >
+        #   I research how to argument the ner performace by using the known entity list。
+        description: |  # this will include new lines to allow paragraphs
+              - I am responsible for the dialogue manager of the chatbot. By analysing the characteristics of the business, i design and devolop rule-based dialogue state tracker and dialogue policy. 
+              - I am responsible for checking and maintaining the response pools.
+              - By analysing the bad case, I optimize the dialogue policy.
+
+      - layout: left
+        title: Chatbot for Smart Earphones
+        # quote: >
+        #   I research how to argument the ner performace by using the known entity list。
+        description: |  # this will include new lines to allow paragraphs
+              - I develop the timming chatbot, alarm chatbot and book-keeping chatbot.  
+              - I update Microsoft Recognizers Text (an universal named entity recognition library) by adding more patterns about time and money.
+      
+      
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
